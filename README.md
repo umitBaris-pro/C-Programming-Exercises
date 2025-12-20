@@ -76,6 +76,27 @@ Print a number pattern that starts with a full row of numbers and decreases in c
 
 ### Algorithm Steps
 1.  **Input:** Get number of rows `n`.
-2.  **Outer Loop:** Iterate `i` from `n` down to 1.
-3.  **Inner Loop:** Print numbers from 1 to `i`.
-4.  **New Line:** Move to next line after each row.
+2.  **Outer Loop:** Iterate `i` from `n` down to 1. 
+4.  **Inner Loop:** Print numbers from 1 to `i`.
+6.  **New Line:** Move to next line after each row.
+---
+
+## 7. Odd Star Pyramid (odd_star_pyramid.c)
+
+### Define Problem
+Print a pyramid pattern where the number of stars in each row corresponds to odd numbers (1, 3, 5, etc.) based on the row number.
+
+### Algorithm Steps
+1.  **Input:** Get height `n`.
+2.  **Outer Loop:** Iterate `i` from 1 to `n`.
+3.  **Space Loop:** Print `n - i` spaces for alignment.
+4.  **Star Loop:** Print `* ` for `2 * i - 1` times (generates odd sequence).
+5.  **New Line:** Move to next line. 
+
+
+
+
+
+
+
+
