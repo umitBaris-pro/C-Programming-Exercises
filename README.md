@@ -91,7 +91,19 @@ Print a pyramid pattern where the number of stars in each row corresponds to odd
 2.  **Outer Loop:** Iterate `i` from 1 to `n`.
 3.  **Space Loop:** Print `n - i` spaces for alignment.
 4.  **Star Loop:** Print `* ` for `2 * i - 1` times (generates odd sequence).
-5.  **New Line:** Move to next line. 
+5.  **New Line:** Move to next line.
+ ---
+
+## 8. Diamond Pattern (diamond_pattern.c)
+
+### Define Problem
+Print a full diamond shape composed of stars. The user specifies the number of rows for the upper half (radius).
+
+### Algorithm Steps
+1.  **Input:** Get radius `n` from user.
+2.  **Upper Part:** Loop `i` from 1 to `n`. Print `n-i` spaces and `2*i-1` stars.
+3.  **Lower Part:** Loop `i` from `n-1` down to 1 (reverse loop). Use the exact same logic for spaces and stars.
+4.  **Result:** Combine both parts to form a perfect diamond.  
 
 
 
