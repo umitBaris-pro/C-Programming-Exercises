@@ -104,7 +104,19 @@ Print a full diamond shape composed of stars. The user specifies the number of r
 2.  **Upper Part:** Loop `i` from 1 to `n`. Print `n-i` spaces and `2*i-1` stars.
 3.  **Lower Part:** Loop `i` from `n-1` down to 1 (reverse loop). Use the exact same logic for spaces and stars.
 4.  **Result:** Combine both parts to form a perfect diamond.  
+---
 
+## 9. Basic Array Input/Output (array_input_output.c)
+
+### Define Problem
+Write a C program that asks the user for the number of elements, stores them in an array, and then displays all elements on the screen.
+
+### Algorithm Steps
+1.  **Declare:** Create an integer array `arr` of size 20.
+2.  **Input Size:** Ask user for the number of elements `n`.
+3.  **Input Loop:** Iterate `i` from 0 to `n-1` to read values into `arr[i]`.
+4.  **Output Loop:** Iterate `i` from 0 to `n-1` to print each value.
+5.  **Format:** Use `\t` (tab) to separate numbers in the output.
 
 
 
