@@ -117,7 +117,19 @@ Write a C program that asks the user for the number of elements, stores them in 
 3.  **Input Loop:** Iterate `i` from 0 to `n-1` to read values into `arr[i]`.
 4.  **Output Loop:** Iterate `i` from 0 to `n-1` to print each value.
 5.  **Format:** Use `\t` (tab) to separate numbers in the output.
+---
 
+## 10. Sum and Mean of Array (array_sum_mean.c)
+
+### Define Problem
+Calculate the sum and arithmetic mean (average) of integer numbers entered by the user into an array.
+
+### Algorithm Steps
+1.  **Input:** Get number of elements `n`.
+2.  **Loop:** Iterate `n` times to read numbers into the array.
+3.  **Accumulate:** Add each entered number to the `sum` variable inside the loop.
+4.  **Calculation:** Divide `sum` by `n` to find the `mean`. (Type casting to float is used for precision).
+5.  **Output:** Print the total sum and the calculated mean.
 
 
 
