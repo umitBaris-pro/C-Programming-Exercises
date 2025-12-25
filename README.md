@@ -130,7 +130,19 @@ Calculate the sum and arithmetic mean (average) of integer numbers entered by th
 3.  **Accumulate:** Add each entered number to the `sum` variable inside the loop.
 4.  **Calculation:** Divide `sum` by `n` to find the `mean`. (Type casting to float is used for precision).
 5.  **Output:** Print the total sum and the calculated mean.
+---
 
+## 11. Find Smallest Element in Array (find_smallest_element.c)
+
+### Define Problem
+Find the smallest integer in an array entered by the user and display its index (position).
+
+### Algorithm Steps
+1.  **Input:** Read `n` elements into array `arr`.
+2.  **Initialize:** Assume the first element (`arr[0]`) is the smallest (`small`) and set position `pos = 0`.
+3.  **Traverse:** Loop through the array starting from the second element (`i = 1`).
+4.  **Compare:** If current element `arr[i]` is smaller than `small`, update `small = arr[i]` and `pos = i`.
+5.  **Output:** Print the smallest value and its position.
 
 
 
