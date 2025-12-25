@@ -143,7 +143,21 @@ Find the smallest integer in an array entered by the user and display its index 
 3.  **Traverse:** Loop through the array starting from the second element (`i = 1`).
 4.  **Compare:** If current element `arr[i]` is smaller than `small`, update `small = arr[i]` and `pos = i`.
 5.  **Output:** Print the smallest value and its position.
+---
 
+## 12. Histogram Chart (histogram_chart.c)
+
+### Define Problem
+Visualize the data inside an array by printing a horizontal bar chart (histogram) using asterisks.
+
+### Algorithm Steps
+1.  **Define:** Set a constant `SIZE` (5) and initialize array `n` with values.
+2.  **Header:** Print the table headers (Element, Value, Histogram).
+3.  **Outer Loop:** Iterate through the array using index `i`.
+4.  **Print Data:** Display the index and the numeric value.
+5.  **Inner Loop:** Iterate `j` from 1 to `n[i]` (value of current element).
+6.  **Draw Bar:** Print an asterisk (`*`) in each iteration of the inner loop.
+7.  **New Line:** Move to the next line after drawing the bar.
 
 
 
