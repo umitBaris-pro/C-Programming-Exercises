@@ -189,7 +189,21 @@ Print Pascal's Triangle, a triangular array of binomial coefficients where each 
     * Otherwise, calculate using formula: $val = val \times \frac{i - j + 1}{j}$.
 6.  **Print:** Display `number` with fixed width for alignment.
 
+---
 
+## 15. V-Shape Character Pattern (v_shape_pattern.c)
+
+### Define Problem
+Print a "V" shape or a right-pointing arrow pattern using a specific character provided by the user. The number of rows determines the height.
+
+### Algorithm Steps
+1.  **Input:** Get `row` count (integer) and `letter` (char) from the user.
+2.  **Buffer Fix:** Use `scanf(" %c", ...)` to correctly handle input skipping.
+3.  **Outer Loop:** Iterate `i` from 1 to `row`.
+4.  **Condition:** Check if current row is in the upper half or lower half.
+    * **Upper Half:** Print `i-1` spaces (indentation increases).
+    * **Lower Half:** Print `row-i` spaces (indentation decreases).
+5.  **Output:** Print the `letter` after the spaces and move to a new line.
 
 
 
