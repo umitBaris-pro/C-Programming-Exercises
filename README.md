@@ -172,6 +172,27 @@ Print a right-angled triangle pattern where each row consists of a repeated uppe
 4.  **Outer Loop:** Iterate through the rows.
 5.  **Inner Loop:** Print `current_char`, repeating it `i` times.
 6.  **Update:** Increment `current_char` to the next letter and move to a new line.
+---
+
+## 14. Pascal's Triangle (pascals_triangle.c)
+
+### Define Problem
+Print Pascal's Triangle, a triangular array of binomial coefficients where each number is the sum of the two numbers directly above it.
+
+### Algorithm Steps
+1.  **Input:** Get the number of `rows`.
+2.  **Outer Loop:** Iterate `i` from 0 to `rows`.
+3.  **Space Loop:** Print spaces to center the triangle.
+4.  **Inner Loop:** Iterate `j` from 0 to `i`.
+5.  **Calculate:**
+    * If `j==0` (start of row), set `number = 1`.
+    * Otherwise, calculate using formula: $val = val \times \frac{i - j + 1}{j}$.
+6.  **Print:** Display `number` with fixed width for alignment.
+
+
+
+
+
 
 
 
