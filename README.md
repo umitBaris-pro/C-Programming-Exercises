@@ -204,7 +204,19 @@ Print a "V" shape or a right-pointing arrow pattern using a specific character p
     * **Upper Half:** Print `i-1` spaces (indentation increases).
     * **Lower Half:** Print `row-i` spaces (indentation decreases).
 5.  **Output:** Print the `letter` after the spaces and move to a new line.
+---
 
+## 16. GCD and LCM Calculator (gcd_lcm.c)
+
+### Define Problem
+Calculate the Greatest Common Divisor (GCD) and Least Common Multiple (LCM) of two integers entered by the user.
+
+### Algorithm Steps
+1.  **Input:** Get two integers `x` and `y`.
+2.  **Determine Limit:** Find the smaller of the two numbers (`small`).
+3.  **Find GCD:** Loop from 1 to `small`. If `i` divides both numbers, update `gcd`.
+4.  **Find LCM:** Use the mathematical relationship `LCM = (x * y) / GCD`.
+5.  **Output:** Print both results.
 
 
 
