@@ -158,7 +158,20 @@ Visualize the data inside an array by printing a horizontal bar chart (histogram
 5.  **Inner Loop:** Iterate `j` from 1 to `n[i]` (value of current element).
 6.  **Draw Bar:** Print an asterisk (`*`) in each iteration of the inner loop.
 7.  **New Line:** Move to the next line after drawing the bar.
+---
 
+## 13. Character Triangle Pattern (character_triangle.c)
+
+### Define Problem
+Print a right-angled triangle pattern where each row consists of a repeated uppercase character, starting from 'A' up to the user-supplied character.
+
+### Algorithm Steps
+1.  **Input:** Get an uppercase character `input` from the user.
+2.  **Initialize:** Set `current_char` to 'A'.
+3.  **Row Calculation:** Determine loop count using `input - 'A' + 1`.
+4.  **Outer Loop:** Iterate through the rows.
+5.  **Inner Loop:** Print `current_char`, repeating it `i` times.
+6.  **Update:** Increment `current_char` to the next letter and move to a new line.
 
 
 
