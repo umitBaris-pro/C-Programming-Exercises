@@ -217,7 +217,20 @@ Calculate the Greatest Common Divisor (GCD) and Least Common Multiple (LCM) of t
 3.  **Find GCD:** Loop from 1 to `small`. If `i` divides both numbers, update `gcd`.
 4.  **Find LCM:** Use the mathematical relationship `LCM = (x * y) / GCD`.
 5.  **Output:** Print both results.
+---
 
+## 17. Power Function with Negative Support (power_function.c)
+
+### Define Problem
+Calculate the result of a number raised to a power ($x^y$), supporting both positive and negative exponents, using a user-defined function.
+
+### Algorithm Steps
+1.  **Define Function:** Create `power(float x, int y)` that returns a float.
+2.  **Input:** Get base (`float`) and exponent (`int`) from the user.
+3.  **Check Sign:** Check if exponent `y` is positive or negative.
+4.  **Positive Case:** Loop `y` times, multiplying `result` by `x`.
+5.  **Negative Case:** Loop `-y` times, multiplying `result` by `1/x`.
+6.  **Output:** Call the function in `main` and display the formatted result.
 
 
 
