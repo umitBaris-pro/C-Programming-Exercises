@@ -231,7 +231,19 @@ Calculate the result of a number raised to a power ($x^y$), supporting both posi
 4.  **Positive Case:** Loop `y` times, multiplying `result` by `x`.
 5.  **Negative Case:** Loop `-y` times, multiplying `result` by `1/x`.
 6.  **Output:** Call the function in `main` and display the formatted result.
+---
 
+## 18. Menu Driven Calculator (menu_calculator.c)
+
+### Define Problem
+Create a modular calculator program that presents a menu to the user, performs operations (Min, Max, Square, Cube, Absolute Value) based on the selection, and repeats until the user chooses to exit.
+
+### Algorithm Steps
+1.  **Functions:** Define separate functions for `menu`, `min`, `max`, `square`, `cube`, and `abs_val`.
+2.  **Do-While Loop:** Create a main loop that keeps the program running.
+3.  **Menu Display:** Call `menu()` to show options.
+4.  **Switch-Case:** Use a `switch` statement to execute the function corresponding to the user's `choice`.
+5.  **Exit Condition:** Terminate the loop when input is 6.
 
 
 
