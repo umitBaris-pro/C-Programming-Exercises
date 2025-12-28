@@ -244,6 +244,21 @@ Create a modular calculator program that presents a menu to the user, performs o
 3.  **Menu Display:** Call `menu()` to show options.
 4.  **Switch-Case:** Use a `switch` statement to execute the function corresponding to the user's `choice`.
 5.  **Exit Condition:** Terminate the loop when input is 6.
+---
 
+## 19. Temperature Converter (temperature_converter.c)
+
+### Define Problem
+Create a menu-driven program to convert temperatures between Celsius, Fahrenheit, and Kelvin scales using functions.
+
+### Algorithm Steps
+1.  **Menu:** Display options for different conversions inside a `do-while` loop.
+2.  **Input:** Use `scanf` with a leading space to handle buffer characters correctly.
+3.  **Functions:** Implement separate functions for each conversion formula:
+    * $C = (F - 32) \times 5/9$
+    * $F = (C \times 9/5) + 32$
+    * $K = C + 273.15$
+4.  **Validation:** In Kelvin conversion, ensure input is not negative (Absolute Zero check).
+5.  **Output:** Display the calculated result formatted to 2 decimal places.
 
 
