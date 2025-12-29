@@ -305,5 +305,18 @@ Sort an array of integers entered by the user in ascending order (smallest to la
 4.  **Compare & Swap:** If `numbers[j] > numbers[j+1]`, swap them using a temporary variable `temp`.
 5.  **Output:** Print the final sorted array.
 
+---
 
+## 23. Student Grade Statistics (student_grades.c)
+
+### Define Problem
+Analyze a class of students by calculating the class average and identifying the highest and lowest scores. The program must handle "ties" (situations where multiple students share the same min or max score) and display their IDs.
+
+### Algorithm Steps
+1.  **Input Size:** Get the number of students.
+2.  **Data Input:** Loop to get `Student ID` and `Score` for each student, storing them in arrays and adding to `sum`.
+3.  **Find Min/Max:** Iterate through the scores to find the lowest and highest values.
+4.  **Calculate Average:** Compute `(float)sum / numStudents`.
+5.  **Output Stats:** Print the average.
+6.  **Find Owners:** Loop through the arrays again. If a student's score matches `minScore` or `maxScore`, print their ID (handling multiple winners/losers).
 
