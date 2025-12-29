@@ -261,4 +261,24 @@ Create a menu-driven program to convert temperatures between Celsius, Fahrenheit
 4.  **Validation:** In Kelvin conversion, ensure input is not negative (Absolute Zero check).
 5.  **Output:** Display the calculated result formatted to 2 decimal places.
 
+---
+
+## 20. Array Read/Write System (array_read_write.c)
+
+### Define Problem
+Create a program that allows the user to manually read from and write to specific indices of an array, while preventing out-of-bounds errors.
+
+### Algorithm Steps
+1.  **Initialize:** Create a `double` array of size 10 and initialize all elements to `0.0`.
+2.  **Menu Loop:** Continuously ask the user to [1] Write, [2] Read, or [-1] Exit.
+3.  **Choice Validation:** Ensure the user inputs a valid menu option.
+4.  **Index Validation:** Ask for an index and check if it is between 0 and 9. If not, show an error.
+5.  **Switch Operations:**
+    * **Write:** Take a float value and store it in `array[index]`.
+    * **Read:** Print the value stored at `array[index]`.
+
+
+
+
+
 
