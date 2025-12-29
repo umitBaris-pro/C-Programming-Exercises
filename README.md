@@ -276,7 +276,20 @@ Create a program that allows the user to manually read from and write to specifi
 5.  **Switch Operations:**
     * **Write:** Take a float value and store it in `array[index]`.
     * **Read:** Print the value stored at `array[index]`.
+---
 
+## 21. Dice Simulation & Frequency Array (dice_simulation.c)
+
+### Define Problem
+Simulate rolling a six-sided die 100 times and count how many times each face (1-6) appears using a frequency array.
+
+### Algorithm Steps
+1.  **Setup:** Initialize a `counter` array of size 7 with zeros (to use indices 1-6).
+2.  **Seed:** Use `srand(time(NULL))` to ensure random numbers change on every run.
+3.  **Simulation Loop:** Iterate 100 times.
+    * Generate a random number between 1 and 6: `rand() % 6 + 1`.
+    * Increment the corresponding index in the array: `counter[dice]++` (Direct Mapping).
+4.  **Output:** Print the total count (frequency) for each face in a tabular format.
 
 
 
