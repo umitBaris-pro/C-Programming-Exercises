@@ -291,7 +291,19 @@ Simulate rolling a six-sided die 100 times and count how many times each face (1
     * Increment the corresponding index in the array: `counter[dice]++` (Direct Mapping).
 4.  **Output:** Print the total count (frequency) for each face in a tabular format.
 
+---
 
+## 22. Bubble Sort Algorithm (bubble_sort.c)
+
+### Define Problem
+Sort an array of integers entered by the user in ascending order (smallest to largest) using the Bubble Sort algorithm.
+
+### Algorithm Steps
+1.  **Input:** Get the `size` of the array and the elements.
+2.  **Outer Loop:** Iterate `i` from 0 to `size-1`. This represents the number of passes.
+3.  **Inner Loop:** Iterate `j` from 0 to `size-i-1`. The limit decreases each time because the largest elements "bubble" to the end and don't need re-checking.
+4.  **Compare & Swap:** If `numbers[j] > numbers[j+1]`, swap them using a temporary variable `temp`.
+5.  **Output:** Print the final sorted array.
 
 
 
