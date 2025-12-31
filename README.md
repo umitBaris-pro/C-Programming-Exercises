@@ -332,3 +332,24 @@ Analyze a dataset of 40 student ratings (on a scale of 1 to 10) to determine the
 3.  **Process Loop:** Iterate through the `responses` array.
 4.  **Direct Mapping:** Use the value of the current response as the index for the frequency array: `frequency[responses[i]]++`.
 5.  **Output:** Print the rating (1-10) and its corresponding count in a table format.
+
+---
+
+## 25. 2D Array Grade System (2d_array_grades.c)
+
+### Define Problem
+Store grades for 3 students across 4 exams using a 2D Matrix (3x4). Display the table, find the global min/max scores, and calculate the average score for each student individually.
+
+### Algorithm Steps
+1.  **Initialize:** Create a 2D array `stgrades[3][4]` with predefined values.
+2.  **Nested Loop (Traversal):**
+    * Outer loop (`i`) iterates through students (rows).
+    * Inner loop (`j`) iterates through exams (columns).
+3.  **Min/Max Logic:** Compare every element `stgrades[i][j]` with current `low` and `high` variables.
+4.  **Average Logic:**
+    * Reset `sum = 0` at the start of each student's row.
+    * Sum the row's values.
+    * Calculate average `sum / 4.0`.
+5.  **Output:** Print the matrix table, global stats, and individual averages.
+
+
