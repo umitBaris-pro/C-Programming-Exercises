@@ -367,6 +367,32 @@ Search for a specific integer within an array entered by the user and determine 
     * Compare each element with `search_num`.
     * If a match is found, store the index in `pos` and `break` the loop.
 4.  **Output:** Check if `pos` is still -1. If yes, print "Not Found"; otherwise, print the found index.
+---
+
+## 27. Binary Search Algorithm (binary_search.c)
+
+### Define Problem
+Find the position of a specific integer in a **sorted** array using the Binary Search algorithm, which is more efficient than Linear Search for large datasets.
+
+### Algorithm Steps
+1.  **Input:** Get `n` elements from the user. **Note:** Input must be sorted (ascending).
+2.  **Initialize:** Set `beg = 0` and `end = n - 1`.
+3.  **Loop:** While `beg <= end`:
+    * Calculate `mid = (beg + end) / 2`.
+    * **Match:** If `arr[mid] == val`, store index and break.
+    * **Left Half:** If `arr[mid] > val`, search the left side (`end = mid - 1`).
+    * **Right Half:** If `arr[mid] < val`, search the right side (`beg = mid + 1`).
+4.  **Output:** Print the index if found, or an error message if not.
+
+
+
+
+
+
+
+
+
+
 
 
 
