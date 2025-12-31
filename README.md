@@ -319,4 +319,16 @@ Analyze a class of students by calculating the class average and identifying the
 4.  **Calculate Average:** Compute `(float)sum / numStudents`.
 5.  **Output Stats:** Print the average.
 6.  **Find Owners:** Loop through the arrays again. If a student's score matches `minScore` or `maxScore`, print their ID (handling multiple winners/losers).
+---
 
+## 24. Survey Data Analysis (survey_analysis.c)
+
+### Define Problem
+Analyze a dataset of 40 student ratings (on a scale of 1 to 10) to determine the frequency distribution of each rating using arrays.
+
+### Algorithm Steps
+1.  **Constants:** Define `RESPONSES_SIZE` (40) and `FREQUENCY_SIZE` (11).
+2.  **Initialize:** Create a `frequency` array initialized to zero.
+3.  **Process Loop:** Iterate through the `responses` array.
+4.  **Direct Mapping:** Use the value of the current response as the index for the frequency array: `frequency[responses[i]]++`.
+5.  **Output:** Print the rating (1-10) and its corresponding count in a table format.
