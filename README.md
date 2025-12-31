@@ -352,4 +352,23 @@ Store grades for 3 students across 4 exams using a 2D Matrix (3x4). Display the 
     * Calculate average `sum / 4.0`.
 5.  **Output:** Print the matrix table, global stats, and individual averages.
 
+---
+
+## 26. Linear Search Algorithm (linear_search.c)
+
+### Define Problem
+Search for a specific integer within an array entered by the user and determine its index position.
+
+### Algorithm Steps
+1.  **Input:** Get the size of the array and the elements.
+2.  **Target:** Get the number (`search_num`) to look for.
+3.  **Linear Search:**
+    * Loop through the array from index `0` to `count-1`.
+    * Compare each element with `search_num`.
+    * If a match is found, store the index in `pos` and `break` the loop.
+4.  **Output:** Check if `pos` is still -1. If yes, print "Not Found"; otherwise, print the found index.
+
+
+
+
 
