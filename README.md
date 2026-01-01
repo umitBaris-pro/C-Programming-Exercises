@@ -383,7 +383,23 @@ Find the position of a specific integer in a **sorted** array using the Binary S
     * **Left Half:** If `arr[mid] > val`, search the left side (`end = mid - 1`).
     * **Right Half:** If `arr[mid] < val`, search the right side (`beg = mid + 1`).
 4.  **Output:** Print the index if found, or an error message if not.
+---
 
+## 28. Interpolation Search Algorithm (interpolation_search.c)
+
+### Define Problem
+Search for a value in a **sorted** array using Interpolation Search. This algorithm improves upon Binary Search for uniformly distributed data by estimating the position of the target value, mimicking how humans search a dictionary.
+
+### Algorithm Steps
+1.  **Input:** Get sorted elements and the target `val`.
+2.  **Range Check:** Ensure `val` is between `arr[low]` and `arr[high]`.
+3.  **Probe Position Formula:**
+    $pos = low + \frac{(val - arr[low]) \times (high - low)}{(arr[high] - arr[low])}$
+4.  **Compare:**
+    * If `arr[pos] == val`, found.
+    * If `arr[pos] < val`, move `low` to `pos + 1`.
+    * If `arr[pos] > val`, move `high` to `pos - 1`.
+5.  **Output:** Print the index or "not found".
 
 
 
