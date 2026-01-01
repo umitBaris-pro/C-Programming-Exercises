@@ -400,7 +400,19 @@ Search for a value in a **sorted** array using Interpolation Search. This algori
     * If `arr[pos] < val`, move `low` to `pos + 1`.
     * If `arr[pos] > val`, move `high` to `pos - 1`.
 5.  **Output:** Print the index or "not found".
+---
 
+## 29. Jump Search Algorithm (jump_search.c)
+
+### Define Problem
+Search for a specific value in a **sorted** array by jumping ahead by fixed steps ($\sqrt{n}$) instead of searching all elements linearly.
+
+### Algorithm Steps
+1.  **Block Size:** Calculate optimal jump step using `sqrt(n)`.
+2.  **Jump Phase:** Check boundaries (indexes `step`, `2*step`, `3*step`...).
+    * If `arr[end] <= val`, jump to the next block (`start = end`).
+3.  **Linear Search Phase:** Once the correct block is identified (where `val` might be), perform a linear search from `start` to `end`.
+4.  **Output:** Print the found index or an error message.
 
 
 
