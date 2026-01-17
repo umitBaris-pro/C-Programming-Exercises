@@ -414,7 +414,22 @@ Search for a specific value in a **sorted** array by jumping ahead by fixed step
 3.  **Linear Search Phase:** Once the correct block is identified (where `val` might be), perform a linear search from `start` to `end`.
 4.  **Output:** Print the found index or an error message.
 
+---
 
+## 30. Number Guessing Game (guessing_game.c)
+
+### Define Problem
+Create an interactive game where the computer selects a random number between 1 and 100, and the user tries to guess it. The program provides "Higher/Lower" feedback and calculates a score based on the number of attempts.
+
+### Algorithm Steps
+1.  **Setup:** Use `srand(time(NULL))` to seed the random generator.
+2.  **Generate:** Pick a random number: `rand() % 100 + 1`.
+3.  **Loop:** Continuously ask for user input until the correct guess or exit signal (-1).
+4.  **Feedback:**
+    * If `guess > target`: Print "Too High".
+    * If `guess < target`: Print "Too Low".
+    * If `guess == target`: End game and show score.
+5.  **Scoring:** Deduct 10 points for every wrong guess.
 
 
 
