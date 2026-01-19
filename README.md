@@ -431,7 +431,20 @@ Create an interactive game where the computer selects a random number between 1 
     * If `guess == target`: End game and show score.
 5.  **Scoring:** Deduct 10 points for every wrong guess.
 
+---
 
+## 31. Character Counter in String (char_counter.c)
+
+### Define Problem
+Read a sentence from the user character-by-character until a period (.) is entered, store it in a string (char array), and count the occurrences of the letters 'A' and 'E' (case-insensitive).
+
+### Algorithm Steps
+1.  **Input Loop:** Use a `do-while` loop to read characters using `scanf("%c")`.
+2.  **Buffer Safety:** Stop reading if the character is `.` or if the array limit (100) is reached.
+3.  **String Termination:** Manually add `\0` (null terminator) to mark the end of the string.
+4.  **Analysis Function:** Pass the array to a function.
+5.  **Counting:** Iterate through the array. If `str[i]` matches 'A'/'a' or 'E'/'e', increment respective counters.
+6.  **Output:** Print the total counts.
 
 
 
