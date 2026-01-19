@@ -447,7 +447,22 @@ Read a sentence from the user character-by-character until a period (.) is enter
 6.  **Output:** Print the total counts.
 
 
+---
 
+## 32. Alphabet Frequency Counter (alphabet_frequency.c)
+
+### Define Problem
+Read a sentence from the user and count the occurrence of every letter (A-Z) regardless of case, using ASCII arithmetic and frequency arrays.
+
+### Algorithm Steps
+1.  **Input:** Read characters into a char array until a period `.` is found.
+2.  **Mapping Logic:** Create an integer array of size 26 (for 26 letters).
+3.  **ASCII Math:**
+    * Iterate through the string.
+    * If char is uppercase: `index = char - 'A'`.
+    * If char is lowercase: `index = char - 'a'`.
+4.  **Increment:** Increase the value at the calculated index: `frequency[index]++`.
+5.  **Output:** Print the counts for letters that appeared in the text.
 
 
 
