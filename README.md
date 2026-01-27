@@ -464,7 +464,21 @@ Read a sentence from the user and count the occurrence of every letter (A-Z) reg
 4.  **Increment:** Increase the value at the calculated index: `frequency[index]++`.
 5.  **Output:** Print the counts for letters that appeared in the text.
 
+---
 
+## 33. Pointers & Pass by Reference (pointer_square.c)
+
+### Define Problem
+Calculate the square of a number using a function, but instead of passing the value directly, pass the memory address (pointer) of the variable.
+
+### Algorithm Steps
+1.  **Input:** Get a `double` number from the user.
+2.  **Function Call:** Call `calculate_square` by passing the **address** of the variable using the `&` operator (e.g., `&num`).
+3.  **Pointer Logic:**
+    * The function accepts a pointer argument (`double *pntr`).
+    * Use the **Dereference Operator** (`*`) to access the value stored at that address.
+    * Calculate `(*pntr) * (*pntr)`.
+4.  **Output:** Return the result and print it.
 
 
 
