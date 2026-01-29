@@ -480,6 +480,23 @@ Calculate the square of a number using a function, but instead of passing the va
     * Calculate `(*pntr) * (*pntr)`.
 4.  **Output:** Return the result and print it.
 
+---
 
+## 34. Pointer Scroll Algorithm (pointer_scroll.c)
+
+### Define Problem
+Create a "scrolling" or "circular shift" effect for a word where each step shifts the word one character to the left, and the shifted character wraps around to the end.
+
+### Algorithm Steps
+1.  **Initialize:** Define a character array (e.g., 'software').
+2.  **Pointer Access:** Instead of array indices, use pointer arithmetic `*(ptr + offset)` to access memory.
+3.  **Nested Loops for Rotation:**
+    * The outer loop tracks the shift offset.
+    * The first inner loop prints from the offset to the end of the array.
+    * The second inner loop prints the remaining part (from the start of the array to the offset) to complete the wrap-around.
+4.  **Full Circle:** Repeat until the word returns to its original state.
+
+### Key Concept: Pointer Arithmetic
+In C, `arr[i]` is identical to `*(arr + i)`. This project demonstrates this relationship by treating the array name as a pointer to the first element.
 
 
