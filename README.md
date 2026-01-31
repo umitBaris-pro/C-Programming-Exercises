@@ -518,3 +518,18 @@ Convert a string entered by the user to all uppercase or all lowercase letters u
     * **To Lower:** Add 32 to Uppercase letters (`'A' + 32 = 'a'`).
     * **To Upper:** Subtract 32 from Lowercase letters (`'a' - 32 = 'A'`).
 5.  **Output:** Print characters using `putchar`.
+
+
+---
+
+## 36. Acronym Generator (acronym_generator.c)
+
+### Define Problem
+Extract and print the first letter of each word in a user-entered sentence to form an acronym (e.g., "North Atlantic Treaty Organization" -> "NATO").
+
+### Algorithm Steps
+1.  **Input:** Read a full sentence using `fgets`.
+2.  **First Character:** Print `ptr[0]` immediately (since it's the start of the first word).
+3.  **Parsing Loop:** Iterate through the string using pointer arithmetic.
+4.  **Space Detection:** Check if the current character is a space `' '`.
+5.  **Extraction:** If a space is found, print the **next** character (`*(ptr + i + 1)`), as it represents the start of a new word.
