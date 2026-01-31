@@ -500,3 +500,21 @@ Create a "scrolling" or "circular shift" effect for a word where each step shift
 In C, `arr[i]` is identical to `*(arr + i)`. This project demonstrates this relationship by treating the array name as a pointer to the first element.
 
 
+
+---
+
+## 35. Case Converter with Pointers (case_converter.c)
+
+### Define Problem
+Convert a string entered by the user to all uppercase or all lowercase letters using pointer arithmetic, without using array indexing (e.g., `arr[i]`).
+
+### Algorithm Steps
+1.  **Menu:** Ask user for conversion type (Upper->Lower or Lower->Upper).
+2.  **Input:** Use `fgets` to read a full sentence (including spaces).
+3.  **Pointer Traversal:**
+    * Iterate through the string using a pointer: `for (; *ptr != '\0'; ptr++)`.
+    * This moves the pointer address forward one byte at a time.
+4.  **ASCII Manipulation:**
+    * **To Lower:** Add 32 to Uppercase letters (`'A' + 32 = 'a'`).
+    * **To Upper:** Subtract 32 from Lowercase letters (`'a' - 32 = 'A'`).
+5.  **Output:** Print characters using `putchar`.
