@@ -533,3 +533,18 @@ Extract and print the first letter of each word in a user-entered sentence to fo
 3.  **Parsing Loop:** Iterate through the string using pointer arithmetic.
 4.  **Space Detection:** Check if the current character is a space `' '`.
 5.  **Extraction:** If a space is found, print the **next** character (`*(ptr + i + 1)`), as it represents the start of a new word.
+
+
+---
+
+## 37. String Reversal (string_reverse.c)
+
+### Define Problem
+Reverse a user-entered string and print it to the console without using library functions like `strrev` or `strlen`.
+
+### Algorithm Steps
+1.  **Input:** Read string using `fgets`.
+2.  **Find Length:** Iterate through the string with `while(*(ptr+i) != '\0')` to find the null terminator.
+3.  **Adjust End:** Set the `last_index`. If `fgets` captured a newline (`\n`), decrement the index to ignore it.
+4.  **Reverse Loop:** Start a loop from `last_index` down to `0`.
+5.  **Output:** Print characters one by one using `putchar(*(ptr+i))`.
