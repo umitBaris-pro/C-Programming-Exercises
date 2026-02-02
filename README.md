@@ -548,3 +548,23 @@ Reverse a user-entered string and print it to the console without using library 
 3.  **Adjust End:** Set the `last_index`. If `fgets` captured a newline (`\n`), decrement the index to ignore it.
 4.  **Reverse Loop:** Start a loop from `last_index` down to `0`.
 5.  **Output:** Print characters one by one using `putchar(*(ptr+i))`.
+
+---
+
+## 38. Text Analyzer (text_analyzer.c)
+
+### Define Problem
+Analyze a text input to count the total number of words and the frequency of each letter (a-z), utilizing the `<ctype.h>` library for character handling.
+
+### Algorithm Steps
+1.  **Input:** Read a paragraph using `fgets`.
+2.  **Traversal:** Loop through the string using a pointer.
+3.  **Letter Counting:**
+    * Convert char to lowercase using `tolower()`.
+    * If it is 'a'-'z', increment the corresponding index: `array[char - 'a']++`.
+4.  **Word Counting:**
+    * Track state with a flag `in_word`.
+    * If a non-space character is found and `in_word` is 0, increment `word_count` and set flag to 1.
+    * If a space is found, set flag to 0.
+5.  **Output:** Print total word count and a table of letter frequencies.
+
