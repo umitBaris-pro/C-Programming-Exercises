@@ -567,4 +567,21 @@ Analyze a text input to count the total number of words and the frequency of eac
     * If a non-space character is found and `in_word` is 0, increment `word_count` and set flag to 1.
     * If a space is found, set flag to 0.
 5.  **Output:** Print total word count and a table of letter frequencies.
+  
 
+---
+
+## 39. Age Calculator using Structs (age_calculator.c)
+
+### Define Problem
+Calculate the exact age of a person in years, months, and days based on their birth date and the current date. This project introduces **Structures (`struct`)** to group related data (Day, Month, Year).
+
+### Algorithm Steps
+1.  **Struct Definition:** Define a `Date` structure to hold day, month, and year.
+2.  **Input:** Get birth date and current date from the user.
+3.  **Leap Year Check:** If the current year is a leap year, update February days to 29.
+4.  **Day Calculation:**
+    * If `current_day < birth_day`: Borrow days from the *previous* month and decrement `current_month`.
+5.  **Month Calculation:**
+    * If `current_month < birth_month`: Borrow 12 months from `current_year` and decrement `current_year`.
+6.  **Output:** Print the calculated difference.
