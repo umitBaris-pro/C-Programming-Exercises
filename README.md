@@ -585,3 +585,24 @@ Calculate the exact age of a person in years, months, and days based on their bi
 5.  **Month Calculation:**
     * If `current_month < birth_month`: Borrow 12 months from `current_year` and decrement `current_year`.
 6.  **Output:** Print the calculated difference.
+
+   ---
+
+## 40. File Copy Program (file_copy.c)
+
+### Define Problem
+Read content from an existing text file (`source.txt`) and copy it byte-by-byte into a new file (`copy_destination.txt`). This project introduces **File I/O** operations.
+
+### Algorithm Steps
+1.  **File Pointers:** Define `FILE *` pointers for source and destination.
+2.  **Open Files:**
+    * Use `fopen("filename", "r")` for reading.
+    * Use `fopen("filename", "w")` for writing (creates file if missing).
+3.  **Validation:** Check if pointers are `NULL` (e.g., file not found).
+4.  **Copy Loop:**
+    * Read a character using `getc()`.
+    * Check for `EOF` (End of File).
+    * Write the character using `putc()`.
+5.  **Close:** Use `fclose()` to release system resources and save data.
+
+
