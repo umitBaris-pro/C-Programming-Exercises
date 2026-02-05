@@ -605,4 +605,6 @@ Read content from an existing text file (`source.txt`) and copy it byte-by-byte 
     * Write the character using `putc()`.
 5.  **Close:** Use `fclose()` to release system resources and save data.
 
+   
+
 
