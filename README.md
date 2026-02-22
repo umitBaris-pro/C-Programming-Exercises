@@ -605,6 +605,21 @@ Read content from an existing text file (`source.txt`) and copy it byte-by-byte 
     * Write the character using `putc()`.
 5.  **Close:** Use `fclose()` to release system resources and save data.
 
-   
+   ---
+
+## 41. ASCII Function Plotter (ascii_function_plotter.c)
+
+### Define Problem
+Create a console-based graph plotter for the quadratic function $f(x) = x^2 + 2$ over the domain $[-2, 5]$. 
+
+### Algorithm Steps
+1.  **Math Library:** Include `<math.h>` to use the `pow()` function.
+2.  **Outer Loop (Domain):** Iterate a variable `x` from `-2.0` to `5.0` with step intervals of `0.5`. This prints the vertical axis.
+3.  **Function Calculation:** For each step, calculate $y = x^2 + 2$.
+4.  **Inner Loop (Range/Visuals):** Iterate `i` from 0 to 30 to represent the horizontal space.
+    * If `i` matches the integer value of `y`, print a `*` to plot the point.
+    * If `x` is `0.0`, print dashes `-` to represent the intersecting axis.
+    * Otherwise, print a space to position the asterisk correctly.
+5.  **Bottom Axis:** Print a visual scale at the bottom of the graph.
 
 
