@@ -621,5 +621,21 @@ Create a console-based graph plotter for the quadratic function $f(x) = x^2 + 2$
     * If `x` is `0.0`, print dashes `-` to represent the intersecting axis.
     * Otherwise, print a space to position the asterisk correctly.
 5.  **Bottom Axis:** Print a visual scale at the bottom of the graph.
+---
+
+## 42. Dynamic Parabola Plotter (dynamic_parabola_plotter.c)
+
+### Define Problem
+Create an interactive console application that plots any quadratic function $f(x) = ax^2 + bx + c$. The program must accept coefficients and domain boundaries from the user and handle negative $y$ values visually.
+
+### Algorithm Steps
+1.  **User Input:** Prompt the user for coefficients ($a, b, c$) and the domain limits (`x_start`, `x_end`).
+2.  **Mathematical Calculation:** Inside a loop stepping by `0.5`, calculate $y$ using `pow(x, 2)`.
+3.  **Coordinate Shifting (Offset Logic):** * Since a console cannot print at negative indices, add a constant offset (e.g., `+20`) to the calculated $y$ value.
+    * Treat the index `20` as the virtual Y-axis (`x = 0` intersection).
+4.  **Plotting:** Loop up to the calculated `offset`. Print a `|` at the virtual axis, spaces elsewhere, and finally a `*` to represent the plotted point.
+
+
+
 
 
