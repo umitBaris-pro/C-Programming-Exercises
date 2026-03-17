@@ -635,7 +635,19 @@ Create an interactive console application that plots any quadratic function $f(x
     * Treat the index `20` as the virtual Y-axis (`x = 0` intersection).
 4.  **Plotting:** Loop up to the calculated `offset`. Print a `|` at the virtual axis, spaces elsewhere, and finally a `*` to represent the plotted point.
 
+---
 
+## 43. Array Modifier using Pointers (array_modifier_pointer.c)
+
+### Define Problem
+Demonstrate how to pass an integer array to a function and permanently modify its original elements using pointer arithmetic, effectively showing the "Pass by Reference" nature of arrays in C.
+
+### Algorithm Steps
+1.  **Initialize Array:** Create an integer array and calculate its `size` dynamically.
+2.  **Display Original:** Print the initial state of the array.
+3.  **Function Call:** Pass the array (which decays to a pointer) and its size to `modify_array()`.
+4.  **Pointer Arithmetic:** Inside the function, iterate through the elements using `*(ptr + i)`. Multiply each dereferenced value by 3 and store it back into the same memory location.
+5.  **Display Modified:** Print the array again in `main()` to prove that the original values were permanently changed.
 
 
 
